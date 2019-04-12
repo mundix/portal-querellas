@@ -298,6 +298,10 @@ body {
     text-decoration: none;
 }
 
+.table-paginator .pagination a.active {
+    color: #28a745;
+}
+
 .de-results-table .table > tbody > tr > td,
 .de-results-table .table > tbody > tr > th,
 .de-results-table .table > tfoot > tr > td,
