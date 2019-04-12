@@ -1,18 +1,42 @@
 /* Import Fonts */
+
+/** Montserrat Regular **/
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
+    font-family: "Montserrat";
     font-weight: 400;
-    src: url('../fonts/montserrat-regular.woff') format('woff'),
-    url('../fonts/montserrat-regular.ttf') format('truetype');
+    font-style: normal;
+    src: url("../fonts/Montserrat-Regular.eot");
+    src: url("../fonts/Montserrat-Regular.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 
+/** Montserrat SemiBold **/
 @font-face {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
+    font-weight: 600;
     font-style: normal;
+    src: url("../fonts/Montserrat-SemiBold.eot");
+    src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+/** Montserrat Bold **/
+@font-face {
+    font-family: "Montserrat";
     font-weight: 700;
-    src: url('../fonts/montserrat-bold.woff') format('woff'),
-    url('../fonts/montserrat-bold.ttf') format('truetype');
+    font-style: normal;
+    src: url("../fonts/Montserrat-Bold.eot");
+    src: url("../fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 body {
@@ -32,6 +56,10 @@ body {
     flex-direction: row;
 }
 
+.de-main-content .container {
+    padding: 0;
+}
+
 /** HELPERS **/
 
 /* HEADER */
@@ -39,7 +67,7 @@ body {
 .main-wrapper {
     max-width: 1460px;
     background-color: #ffffff;
-    margin-top: 40px;
+    margin-top: 0;
 }
 
 .header-top {
@@ -54,6 +82,7 @@ body {
 
 .hero-area {
     height: 320px;
+    margin-bottom: 10px;
 }
 
 .banner-area {
@@ -67,11 +96,50 @@ body {
 }
 
 .banner-content h1 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
 }
 
 /* HEADER ENDs */
+
+/* SEARCH FILTER BOX */
+
+.search-title {
+    font-size: 20px;
+}
+
+.de-search-filter {
+    padding: 30px 15px;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    margin: 30px 0;
+}
+
+.de-search-filter .form-group {
+    margin-bottom: 0;
+}
+
+.filter-fields > div {
+    margin-bottom: 30px;
+}
+
+.filter-fields label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.search-action {
+    text-align: center;
+}
+
+.search-btn {
+    background-color: #0e7171;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* SEARCH FILTER BOX ENDs */
 
 
 /* MEDIA QUERIES */
@@ -90,6 +158,10 @@ body {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
+    .header-top {
+        text-align: left;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -98,18 +170,26 @@ body {
         margin-top: 100px;
     }
 
+    .de-main-content .container {
+        padding: 0 15px;
+    }
+
     .header-top {
         margin: 40px 0;
-        text-align: left;
     }
 
     .hero-area {
         height: 420px;
+        margin-bottom: 30px;
     }
 
     .banner-content h1 {
         font-size: 32px;
         line-height: 42px;
+    }
+
+    .de-search-filter {
+        padding: 30px 15px;
     }
 }
 

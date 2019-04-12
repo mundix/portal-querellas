@@ -42,7 +42,8 @@
 <body>
 
 <div class="main-wrapper container-fluid">
-    <header>
+    <!-- Header Start -->
+    <header class="de-header">
         <div class="row">
             <div class="container">
                 <div class="header-wrap">
@@ -59,7 +60,7 @@
                         <div class="row">
                             <div class="col-lg-7">
                                 <div class="banner-content">
-                                    <h1 class="">Hola John,<br>
+                                    <h1>Hola John,<br>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
                                 </div>
                             </div>
@@ -69,6 +70,64 @@
             </div>
         </div>
     </header>
+    <!--.// Header ENDs -->
+
+    <!-- Main Start -->
+    <main class="de-main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="search-title">Criterios de Búsqueda</h3>
+                </div>
+                <div class="col-md-12">
+                    <div class="de-search-filter">
+                        <form action="#" class="form-horizontal">
+                            <div class="form-group filter-fields">
+                                <div class="col-sm-6 col-md-4">
+                                    <label for="from-date">Desde</label>
+                                    <input type="date" class="form-control" id="from-date" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <label for="matter">Asunto</label>
+                                    <input type="text" class="form-control" id="matter" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <label for="record-number">Número de Querella</label>
+                                    <input type="text" class="form-control" id="record-number" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <label for="to-date">Hasta</label>
+                                    <input type="date" class="form-control" id="to-date" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <label for="judge-name">Juez</label>
+                                    <input type="text" class="form-control" id="judge-name" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <label for="required-derp">Requiere Cumplimiento DEPR</label>
+                                    <select id="required-derp" class="form-control select-filter">
+                                        <option value="">Cumplimiento 1</option>
+                                        <option value="">Cumplimiento 2</option>
+                                        <option value="">Cumplimiento 3</option>
+                                        <option value="">Cumplimiento 4</option>
+                                        <option value="">Cumplimiento 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="search-action">
+                                        <button class="btn btn-lg search-btn">Buscar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--.// Main ENDs -->
 </div>
 
 <!-- jQuery -->
