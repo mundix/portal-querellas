@@ -1,0 +1,368 @@
+/* Import Fonts */
+
+/** Montserrat Regular **/
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Montserrat-Regular.eot");
+    src: url("../fonts/Montserrat-Regular.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+/** Montserrat SemiBold **/
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/Montserrat-SemiBold.eot");
+    src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+/** Montserrat Bold **/
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/Montserrat-Bold.eot");
+    src: url("../fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    background-color: #eaf0f0;
+}
+
+/** COMMON AND HELPERS **/
+
+.vcenter {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.de-main-content .container {
+    padding: 0;
+}
+
+/** HELPERS **/
+
+/* HEADER */
+
+.main-wrapper {
+    max-width: 1460px;
+    background-color: #ffffff;
+    margin-top: 0;
+}
+
+.header-top {
+    margin: 40px 0;
+    height: 56px;
+    text-align: center;
+}
+
+.header-top .logo, .header-top .logo img {
+    height: 100%;
+}
+
+.hero-area {
+    height: 320px;
+    margin-bottom: 10px;
+}
+
+.banner-area {
+    background-image: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* HEADER ENDs */
+
+/* SEARCH FILTER BOX */
+
+.block-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.de-search-filter {
+    padding: 30px 15px;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    margin: 30px 0;
+}
+
+.de-search-filter .form-group {
+    margin-bottom: 0;
+}
+
+.de-search-filter .form-control {
+    height: 40px;
+}
+
+.bootstrap-select.form-control {
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-group .date{
+    position:relative;
+}
+
+.bootstrap-select > .dropdown-toggle {
+    border: 0;
+    background: transparent;
+    height: 38px;
+}
+
+.bootstrap-select > .dropdown-toggle .bs-caret {
+    display: none;
+}
+
+.select-filter .dropdown-toggle {
+    overflow: hidden;
+}
+
+.filter-fields {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.filter-fields .field {
+    width: 100%;
+}
+
+.filter-fields .field:nth-of-type(1) { order: 1; }
+.filter-fields .field:nth-of-type(2) { order: 3; }
+.filter-fields .field:nth-of-type(3) { order: 4; }
+.filter-fields .field:nth-of-type(4) { order: 2; }
+.filter-fields .field:nth-of-type(5) { order: 5; }
+.filter-fields .field:nth-of-type(6) { order: 6; }
+
+.select-filter .dropdown-toggle:before {
+    content: '';
+    position: absolute;
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    color: #ccc;
+    font-size: 16px;
+    bottom: 0;
+    right: 0;
+    border-left: solid 1px #cccccc;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.input-group-addon {
+    background-color: transparent;
+}
+
+.input-group-addon i {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.select-filter.derp .dropdown-toggle:before {
+    content: '\f078';
+}
+
+.filter-fields > div {
+    margin-bottom: 30px;
+}
+
+.filter-fields label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.search-action {
+    text-align: center;
+}
+
+.search-btn {
+    background-color: #0e7171;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.search-btn:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* SEARCH FILTER BOX ENDs */
+
+
+/* RESULTS TABLE */
+.de-results-table {
+    margin-bottom: 30px;
+}
+
+.de-results-table a {
+    color: #0e7171;
+    font-weight: 600;
+}
+
+.de-results-table a i {
+    background: #0e7171;
+    color: #fff;
+    padding: 4px 7px;
+    border-radius: 50%;
+}
+
+.de-results-table .table {
+    font-size: 12px;
+}
+
+.de-results-table .table thead {
+    background: #0e7171;
+    color: #fff;
+}
+
+.de-results-table .table .order {
+    padding-left: 15px;
+}
+
+.de-main-content .panel {
+    border-color: #0e7171;
+    overflow: hidden;
+}
+
+.de-results-table a:hover {
+    text-decoration: none;
+}
+
+.de-results-table .table > tbody > tr > td,
+.de-results-table .table > tbody > tr > th,
+.de-results-table .table > tfoot > tr > td,
+.de-results-table .table > tfoot > tr > th,
+.de-results-table .table > thead > tr > th {
+    padding: 16px 8px;
+}
+
+.de-results-table .table > thead > tr > th {
+    padding: 24px 8px;
+}
+
+/* RESULTS TABLE ENDs */
+
+
+/* SPONSORS */
+.sponsors {
+    margin: 50px 0 70px 0;
+}
+
+.logos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 350px;
+    height: 80px;
+}
+
+.logos li {
+    text-align: center;
+}
+
+.logos img {
+    max-height: 60px;
+}
+
+/* SPONSORS ENDs */
+
+
+/* MEDIA QUERIES */
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+    .header-top {
+        text-align: left;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    .main-wrapper {
+        margin: 100px auto;
+    }
+
+    .de-main-content .container {
+        padding: 0 15px;
+    }
+
+    .header-top {
+        margin: 40px 0;
+    }
+
+    .hero-area {
+        height: 420px;
+        margin-bottom: 30px;
+    }
+
+    .banner-content h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .de-search-filter {
+        padding: 30px 15px;
+    }
+
+    .block-title {
+        font-size: 20px;
+    }
+
+    .logos img {
+        max-height: 80px;
+    }
+
+    .filter-fields {
+        display: block;
+    }
+
+    .filter-fields .field {
+        width: 33.33333333%;
+    }
+}
