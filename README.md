@@ -8,5 +8,5 @@ This project contains the complain for PR Education Department.
 2. FontAwesome v5.8.1
 3. Bootstrap Select v1.13.7
 4. DataTables v1.10.18
-5. Monserrat (Google Font)
+5. Montserrat (Google Font)
 
