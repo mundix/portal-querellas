@@ -120,6 +120,65 @@ body {
     margin-bottom: 0;
 }
 
+.de-search-filter .form-control {
+    height: 40px;
+}
+
+.bootstrap-select.form-control {
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-group .date{
+    position:relative;
+}
+
+.bootstrap-select > .dropdown-toggle {
+    border: 0;
+    background: transparent;
+    height: 38px;
+}
+
+.bootstrap-select > .dropdown-toggle .bs-caret {
+    display: none;
+}
+
+.select-filter .dropdown-toggle {
+    overflow: hidden;
+}
+
+.select-filter .dropdown-toggle:before {
+    content: '';
+    position: absolute;
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    color: #ccc;
+    font-size: 16px;
+    bottom: 0;
+    right: 0;
+    border-left: solid 1px #cccccc;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.input-group-addon {
+    background-color: transparent;
+}
+
+.input-group-addon i {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.select-filter.derp .dropdown-toggle:before {
+    content: '\f078';
+}
+
 .filter-fields > div {
     margin-bottom: 30px;
 }
@@ -138,6 +197,11 @@ body {
     padding: 10px 40px;
     color: #fff;
     font-size: 14px;
+}
+
+.search-btn:hover {
+    color: #fff;
+    font-weight: 600;
 }
 
 /* SEARCH FILTER BOX ENDs */
@@ -178,15 +242,15 @@ body {
     text-decoration: none;
 }
 
-.de-results-table .table>tbody>tr>td,
-.de-results-table .table>tbody>tr>th,
-.de-results-table .table>tfoot>tr>td,
-.de-results-table .table>tfoot>tr>th,
-.de-results-table .table>thead>tr>th {
+.de-results-table .table > tbody > tr > td,
+.de-results-table .table > tbody > tr > th,
+.de-results-table .table > tfoot > tr > td,
+.de-results-table .table > tfoot > tr > th,
+.de-results-table .table > thead > tr > th {
     padding: 16px 8px;
 }
 
-.de-results-table .table>thead>tr>th {
+.de-results-table .table > thead > tr > th {
     padding: 24px 8px;
 }
 
@@ -229,7 +293,7 @@ body {
 /*==========  Mobile First Method  ==========*/
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width: 480px) {
 
     .header-top {
         text-align: left;
@@ -238,7 +302,7 @@ body {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
     .main-wrapper {
         margin: 100px auto;
     }
