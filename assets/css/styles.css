@@ -228,11 +228,6 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
@@ -277,14 +272,4 @@ body {
     .logos img {
         max-height: 80px;
     }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
 }
